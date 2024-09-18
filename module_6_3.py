@@ -5,9 +5,6 @@ class Horse:
     def __init__(self):
         super().__init__()
 
-    def __iadd__(self, value):
-        return self.__iadd__(value)
-
     def run(self, dx):
         self.dx = dx
         Horse.x_distance += self.dx
@@ -17,9 +14,6 @@ class Horse:
 class Eagle:
     y_distance = 0
     sound = 'I train, eat, sleep, and repeat'
-
-    def __iadd__(self, value):
-        return self.__iadd__(value)
 
     def fly(self, dy):
         self.dy = dy
